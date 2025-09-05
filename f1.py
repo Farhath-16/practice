@@ -1,1 +1,2 @@
 print("kan")
+print("man")
