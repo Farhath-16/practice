@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple HTML Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; }
+    header, footer { padding: 1rem 0; }
+    nav a { margin-right: 1rem; text-decoration: none; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 1rem; max-width: 600px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 0.5rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    form { margin-top: 1rem; }
+    input, textarea, button, select { padding: 0.5rem; margin-top: 0.25rem; width: 100%; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome 👋</h1>
+    <p>This is a minimal HTML page you can paste into Notepad and save as <code>index.html</code>.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#list">List</a>
+      <a href="#table">Table</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        HTML (HyperText Markup Language) structures content on the web using elements like
+        headings, paragraphs, images, lists, and forms.
+      </p>
+      <figure>
+        <img
+          src="https://via.placeholder.com/600x200?text=Placeholder+Image"
+          alt="Placeholder banner"
+          style="width: 100%; border-radius: 8px;"
+        />
+        <figcaption>A placeholder image loaded from the web.</figcaption>
+      </figure>
+    </section>
+
+    <section id="list" class="card" style="margin-top: 1rem;">
+      <h2>Unordered List</h2>
+      <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+      </ol>
+      <details>
+        <summary>More info</summary>
+        <p>This content is revealed using the <code>&lt;details&gt;</code> element.</p>
+      </details>
+    </section>
+
+    <section id="table" class="card" style="margin-top: 1rem;">
+      <h2>Simple Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Use Case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Structure</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Interactivity</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact" class="card" style="margin-top: 1rem;">
+      <h2>Contact Form (demo)</h2>
+      <form>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Topic
+          <select name="topic">
+            <option>General</option>
+            <option>Feedback</option>
+            <option>Support</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Write something..."></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+      <p>
+        Learn more at
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+          MDN Web Docs (HTML)
+        </a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>
